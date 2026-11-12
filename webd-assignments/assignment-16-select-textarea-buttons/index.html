@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select, Textarea and Buttons</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <p>
+      <label for="course">Course:</label>
+      <select id="course" name="course">
+        <option value="ece">ECE</option>
+        <option value="cse">CSE</option>
+        <option value="me">ME</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="feedback">Feedback:</label><br>
+      <textarea id="feedback" name="feedback" rows="5" cols="50" placeholder="Write here..."></textarea>
+    </p>
+
+    <p>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+    </p>
+  </form>
+</body>
+</html>
