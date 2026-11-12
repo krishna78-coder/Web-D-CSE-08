@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested and Responsive Table</title>
+  <style>
+    .table-wrap {
+      overflow-x: auto;
+      max-width: 100%;
+    }
+    table {
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+  <!-- The wrapper scrolls sideways on small screens instead of breaking the layout -->
+  <div class="table-wrap">
+    <table border="1" cellpadding="10" cellspacing="0">
+      <tr>
+        <th>Day</th>
+        <th>Lab Batches</th>
+        <th>Faculty</th>
+        <th>Room</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>
+          <!-- Nested table inside a cell -->
+          <table border="1" cellpadding="6" cellspacing="0">
+            <tr>
+              <th>Batch</th>
+              <th>System</th>
+            </tr>
+            <tr>
+              <td>A1</td>
+              <td>PC 1-20</td>
+            </tr>
+            <tr>
+              <td>A2</td>
+              <td>PC 21-40</td>
+            </tr>
+          </table>
+        </td>
+        <td>Dr. Sharma</td>
+        <td>Lab 2</td>
+        <td>2-4 PM</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
